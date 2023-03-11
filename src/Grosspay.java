@@ -57,12 +57,10 @@ class Grosspay{
         return grossweeklypay;
     }
 
-    private static double displayResult(double grossannualpay, double grossweeklypay, double grossmonthlypay){
+    private static void displayResult(double grossannualpay, double grossweeklypay, double grossmonthlypay){
         System.out.println("The gross annual pay is" + " $ "+ grossannualpay);
         System.out.println("The gross monthly pay is" + " $ "+ grossmonthlypay);
         System.out.println("The gross weekly pay is" +" $ "+ grossweeklypay);
-
-    return grossweeklypay;
     }
 
 
