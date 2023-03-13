@@ -54,7 +54,7 @@ public class Paint {
         return sqftpergallon;
     }
     private static double calculateAreaofwalls(double length,double width,double height){
-        double areaof4walls = ((2 * length * height) + (2 * width * height));
+       double areaof4walls = ((2 * length * height) + (2 * width * height));
         return areaof4walls;
     }
     private static double calculateNoofgallons(double areaof4walls,double sqftpergallon){
@@ -64,9 +64,7 @@ public class Paint {
     }
 
 private static int converttoInt(double noofgallons) {
-        int gallons;
-    gallons = (int) Math.round(noofgallons);
-    return gallons;
+    return (int) Math.round(noofgallons);
 }
     private static double calculateTotalCost(int gallons,double price){
         double totalcost;
