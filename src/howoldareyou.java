@@ -51,12 +51,8 @@ public class howoldareyou {
         return selection;
     }
 
-    public static String getmonthsdayshoursseonds(String label) {
-        String monthsdayshoursseconds;
-
-        System.out.println("Converting to " + label);
-        monthsdayshoursseconds = input.nextLine();
-        return monthsdayshoursseconds;
+    public static String getmonthsdayshoursseonds(String label){
+        return null;
     }
     public static double calculateAgeinmonths(double ageinyears) {
         double ageinmonths = (ageinyears * 12);
