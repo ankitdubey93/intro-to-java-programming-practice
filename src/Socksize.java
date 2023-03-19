@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class Socksize {
-    static double size;
 
  public static Scanner input = new Scanner(System.in);
  public static void main(String[] args) {
@@ -17,14 +16,14 @@ public class Socksize {
  public static double getShoesize() {
      System.out.println("Please enter your shoe size:");
      if(input.hasNextDouble()) {
-         return ((input.nextDouble())+0.5);
+         return (input.nextDouble());
      }
      else {
-         System.out.println("Enter a Valid Value");
-
+         System.out.println("You entered an invalid value");
+         System.exit(0);
+         return 0.0;
      }
  }
- // Ask chotu how to return statement for my purpose
  public static int convertshoe(double shoesize){
      return (int)shoesize;
 
