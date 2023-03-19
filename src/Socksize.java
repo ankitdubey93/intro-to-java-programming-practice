@@ -1,9 +1,12 @@
-import java.util.*;
+import java.util.Scanner;
 public class Socksize {
+    static double size;
+
  public static Scanner input = new Scanner(System.in);
  public static void main(String[] args) {
     double shoesize;
     String socksize;
+
     int shoe;
 
      shoesize = getShoesize();
@@ -12,17 +15,23 @@ public class Socksize {
      displayResult(socksize);
  }
  public static double getShoesize() {
-     double shoesize;
      System.out.println("Please enter your shoe size:");
-     shoesize = ((input.nextDouble())+0.5);
-     return shoesize;
+     if(input.hasNextDouble()) {
+         return ((input.nextDouble())+0.5);
+     }
+     else {
+         System.out.println("Enter a Valid Value");
+
+     }
  }
+ // Ask chotu how to return statement for my purpose
  public static int convertshoe(double shoesize){
-     int shoe = (int)shoesize;
-     return shoe;
+     return (int)shoesize;
+
  }
 
  public static String getSocksize(int shoe) {
+     String socksize = ("sock size");
 
      if (shoe<=4) {
          return ("extra small");
@@ -39,7 +48,8 @@ public class Socksize {
      if (shoe>=13) {
          return ("extra large");
      }
-     return (getSocksize(shoe));
+
+     return socksize;
  }
 
  public static void displayResult(String socksize) {
