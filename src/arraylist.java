@@ -5,7 +5,7 @@ public class arraylist {
     public static void main(String args[]) {
 
        String[] courses = {"java","php","Hadoop","devops","python"};
-       List<String> list = new LinkedList<String>();
+       List<String> list = (List<String>) new LinkedList();
        for (String s: courses) {
            list.add(s);
        }
